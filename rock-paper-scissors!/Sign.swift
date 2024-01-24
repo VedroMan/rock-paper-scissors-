@@ -36,7 +36,7 @@ func randomSign() -> Sign {
             }
         }
         
-        func getResult (for oposite: Sign) -> GameState {
+        func getResult (_ oposite: Sign) -> GameState {
             
             switch self {
             case .rock:
