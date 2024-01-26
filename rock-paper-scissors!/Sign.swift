@@ -28,11 +28,11 @@ func randomSign() -> Sign {
         var emojiValue: String {
             switch self {
             case .paper:
-                return "📄"
+                return "✋"
             case .rock:
-                return "🪨"
+                return "✊"
             case .scissors:
-                return "✂️"
+                return "✌️"
             }
         }
         
