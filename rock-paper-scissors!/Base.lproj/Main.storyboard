@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,107 +13,108 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rock_paper_scissors_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="125" translatesAutoresizingMaskIntoConstraints="NO" id="2I1-XG-Rgz">
-                                <rect key="frame" x="48.5" y="50" width="317" height="796"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-LZ-WLd">
+                                <rect key="frame" x="5" y="90" width="310" height="351.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhV-ZA-OVE">
-                                        <rect key="frame" x="109" y="0.0" width="99" height="249"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StW-QY-Nds">
+                                        <rect key="frame" x="102.5" y="0.0" width="105" height="46"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="🤖">
-                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="75"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="камень-ножницы-бумага?!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey6-wj-Xzm">
-                                        <rect key="frame" x="17.5" y="374" width="282.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="камень-ножницы-бумага!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBp-cm-hHe">
+                                        <rect key="frame" x="38" y="87" width="234" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" systemColor="labelColor"/>
-                                        <size key="shadowOffset" width="1" height="-1"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="y42-vt-03G">
-                                        <rect key="frame" x="0.0" y="523" width="317" height="107.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-LO-L13">
+                                        <rect key="frame" x="0.0" y="148.5" width="310" height="124"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yn8-gW-Dtp">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="107.5"/>
-                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCc-hq-FIV">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="124"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="🪨">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="65"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="✊">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="75"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIm-k2-hIY"/>
+                                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ye-HH-c2c"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plO-Ua-OUk">
-                                                <rect key="frame" x="114" y="0.0" width="89" height="107.5"/>
-                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZb-Dt-hSX">
+                                                <rect key="frame" x="103.5" y="0.0" width="103" height="124"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="✂️">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="65"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="✌️">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="75"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fU0-O6-Adg"/>
+                                                    <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9N-aS-dcf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ob-jf-w2u">
-                                                <rect key="frame" x="228" y="0.0" width="89" height="107.5"/>
-                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zai-5E-vMq">
+                                                <rect key="frame" x="206.5" y="0.0" width="103.5" height="124"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="📄">
-                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="65"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="✋">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="75"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PyR-Ox-mL6"/>
+                                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9i-jj-Zq0"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNp-gm-6a5">
-                                        <rect key="frame" x="89" y="755.5" width="139.5" height="40.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpP-U5-zTX">
+                                        <rect key="frame" x="102.5" y="313.5" width="105" height="38"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.circle" catalog="system" title="Рестарт">
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="22"/>
-                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Рестарт">
+                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="restartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSI-ek-5cR"/>
+                                            <action selector="restartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="alY-9n-XOz"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="GpP-U5-zTX" firstAttribute="centerX" secondItem="Qfe-LZ-WLd" secondAttribute="centerX" id="8q6-ZW-ZMt"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="0.71501128599999997" blue="0.31835669350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
-                            <constraint firstItem="2I1-XG-Rgz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="46i-uE-ppJ"/>
-                            <constraint firstItem="2I1-XG-Rgz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CTC-ax-Kka"/>
-                            <constraint firstItem="2I1-XG-Rgz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pp1-oc-CUY"/>
+                            <constraint firstItem="Qfe-LZ-WLd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="2Bq-A9-v0Q"/>
+                            <constraint firstItem="Qfe-LZ-WLd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Ug-9A-Tbi"/>
+                            <constraint firstItem="Qfe-LZ-WLd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="6Os-vf-rFB"/>
+                            <constraint firstItem="Qfe-LZ-WLd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-18.25" id="Ssk-QW-7Ss"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qfe-LZ-WLd" secondAttribute="trailing" constant="5" id="YU8-Mb-z4W"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ChangingRbtButton" destination="rhV-ZA-OVE" id="Hyx-Ly-2Sf"/>
-                        <outlet property="paperButton" destination="6Ob-jf-w2u" id="JTy-kR-Xhx"/>
-                        <outlet property="restartButton" destination="nNp-gm-6a5" id="y6n-SZ-rvg"/>
-                        <outlet property="rockButton" destination="yn8-gW-Dtp" id="HkK-zF-eq4"/>
-                        <outlet property="scissorsButton" destination="plO-Ua-OUk" id="Dc9-L0-1G0"/>
-                        <outlet property="statusLabel" destination="Ey6-wj-Xzm" id="y7u-ZF-Mhs"/>
+                        <outlet property="ChangingRbtButton" destination="StW-QY-Nds" id="GfK-eh-jvD"/>
+                        <outlet property="paperButton" destination="Zai-5E-vMq" id="8gY-DK-h2W"/>
+                        <outlet property="restartButton" destination="GpP-U5-zTX" id="0FR-vz-fy9"/>
+                        <outlet property="rockButton" destination="jCc-hq-FIV" id="M11-vX-CJT"/>
+                        <outlet property="scissorsButton" destination="RZb-Dt-hSX" id="0rv-HV-nfi"/>
+                        <outlet property="statusLabel" destination="pBp-cm-hHe" id="pbS-ub-H0O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.13043478260872" y="3.3482142857142856"/>
+            <point key="canvasLocation" x="138.75" y="3.1690140845070425"/>
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.backward.circle" catalog="system" width="128" height="123"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
