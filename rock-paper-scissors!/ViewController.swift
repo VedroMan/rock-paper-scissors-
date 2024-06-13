@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         }
         
         //баннер выводящий результаты
-        let alertController = UIAlertController(title: "Итоги игры", message: "Победы: \(wins) \nПоражения: \(losses)", preferredStyle: .alert )
+        let alertController = UIAlertController(title: "Итоги игры", message: "Победы: \(wins) \nПроигрыши: \(losses)", preferredStyle: .alert )
         
         //кнопка для алерта
         alertController.addAction(UIAlertAction(title: "ОК", style: .default, handler: nil))
